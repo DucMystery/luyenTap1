@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 8</title>
+</head>
+<body>
+<script>
+    let array=[];
+    array.length=5;
+    for (let i=0;i<array.length;i++){
+        array[i]= parseInt(prompt("Moi ban nhap vao phan tu "+i+" :"));
+    }
+    document.write("arr[] = "+"[ "+array+"]"+"<br/>");
+    for (let i=0;i<array.length;i++){
+        for (let j=i+1;j<array.length;j++){
+            if (array[i]<array[j]){
+                let max=array[i];
+                array[i]=array[j];
+                array[j]=max;
+            }
+        }
+    }
+    document.write("Mang sau khi sap xep la:"+"<br/>");
+   for (let i=0;i<array.length;i++){
+       document.write(array[i]+" ");
+   }
+</script>
+</body>
+</html>

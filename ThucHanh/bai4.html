@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 4</title>
+</head>
+<body>
+<script>
+    let array=[];
+    array.length=4;
+    for (let i=0;i<array.length;i++){
+        array[i]=parseInt(prompt("moi nhap vao gia tri :"+i));
+    }
+    document.write("arr[] = "+"[ "+array+"]"+"<br/>");
+    let index=0;
+    let w= array.length-1;
+    while (index<w){
+        let b= array[index];
+        array[index]=array[w];
+        array[w]= b;
+        index++;
+        w--;
+    }
+    document.write("Bang sau khi dao nguoc:"+array);
+</script>
+</body>
+</html>

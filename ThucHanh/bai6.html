@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 6</title>
+</head>
+<body>
+<script>
+    let array=[];
+    array.length=5;
+    let number =parseInt(prompt("Moi ban nhap vao so bat ky:"));
+    for (let i=0;i<array.length;i++){
+        array[i]=parseInt(prompt("Moi ban nhap vao phan tu "+i+" :"));
+    }
+    document.write("arr[] = "+"[ "+array+"]"+"<br/>");
+    for (let i=0;i<array.length;i++){
+        if (array[i]===number){
+            document.write("So Ban vua nhap thuoc mang!");
+            break;
+        }else if (i===array.length-1){
+            document.write("So ban vua nhap ko thuoc mang!");
+        }
+    }
+
+</script>
+</body>
+</html>

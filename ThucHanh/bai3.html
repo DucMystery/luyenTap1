@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+<script>
+    let array =[1,3,4,2,19,5,7,6,9,18];
+    let gTriTB;
+    let max =array[0];
+    let t=0;
+    for (let i=0;i<array.length;i++){
+        t+=array[i];
+        if (array[i]>max){
+            max=array[i];
+        }
+    }
+    gTriTB=t/array.length;
+    document.write(max+" la gia tri lon nhat va co gia tri trung binh la : "+gTriTB);
+</script>
+</body>
+</html>
